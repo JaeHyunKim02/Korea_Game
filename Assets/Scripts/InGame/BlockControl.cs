@@ -36,8 +36,8 @@ public class BlockControl : MonoBehaviour
     }
     void RandomHeight()
     {
-        float height = Random.Range(_minHeight, _maxHeight);
-        transform.position = new Vector3(transform.position.x, height);
+        //float height = Random.Range(_minHeight, _maxHeight);
+        //transform.position = new Vector3(transform.position.x, height);
         //int rd = Random.Range(0, 2);
         //if (rd == 0)
         //{
