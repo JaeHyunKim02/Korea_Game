@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainGame.unity
     guid: b23b208b8dd9dea4ab1da1b7fa5f2b01
+  - enabled: 1
+    path: Assets/Scenes/dogam.unity
+    guid: 8b171474add07fc4e88d5088db28fef4
   m_configObjects: {}

@@ -10,6 +10,11 @@ public class ButtonManager : MonoBehaviour
     public void GotoStart()
     {
         SceneManager.LoadScene("MainGame");
+        
+    }
+    public void Gotodogam()
+    {
+        SceneManager.LoadScene("dogam");
 
     }
 }
