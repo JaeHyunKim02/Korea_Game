@@ -15,11 +15,13 @@ public class WordMove : MonoBehaviour
         transform.Translate(Vector3.left * Time.deltaTime * Speed);
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
-            
+            Debug.Log("awgsgasgsadgsagsdaf");
+            Destroy(gameObject);
         }
     }   
 }

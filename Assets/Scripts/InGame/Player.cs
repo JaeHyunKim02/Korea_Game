@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     Animator animator;
     Rigidbody2D rigidbody;
+   
 
     public float Speed = 5;
     public float JumpPower = 100;
@@ -23,7 +24,8 @@ public class Player : MonoBehaviour
     {
         animator = gameObject.GetComponent<Animator>();
         rigidbody = gameObject.GetComponent<Rigidbody2D>();
-
+        
+        
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -42,11 +44,13 @@ public class Player : MonoBehaviour
     {
         if(other.gameObject.tag == "Slang")
         {
-
+            Debug.Log("안좋은거");
+            Destroy(other);
         }
         else if(other.gameObject.tag == "Standard")
         {
-
+            Debug.Log("좋은거");
+            Destroy(other);
         }
     }
 
